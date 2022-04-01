@@ -64,38 +64,38 @@ public class SearchHotel extends baseClass{
 //		srchcountry.click_guest_btn();
 //	}
 //	
-	@Test (priority = 9, enabled= true, dependsOnMethods = {"clickCheckoutdate"})
+	@Test (priority = 8, enabled= true, dependsOnMethods = {"clickCheckoutdate"})
 	public void increasechild() {
 		srchcountry.click_child_increase_button();
 	}
 	
 
-	@Test (priority = 10, enabled= true, dependsOnMethods = {"increasechild"})
+	@Test (priority = 9, enabled= true, dependsOnMethods = {"increasechild"})
 	public void clickAgedropdown() throws InterruptedException {
 		srchcountry.click_age_dropdown();
 		Thread.sleep(2000);
 	}
 	
 
-	@Test (priority = 11, enabled= true, dependsOnMethods = {"clickAgedropdown"})
+	@Test (priority = 10, enabled= true, dependsOnMethods = {"clickAgedropdown"})
 	public void selectAge() {
 		srchcountry.select_age();
 	}
 	
-	@Test (priority = 12, enabled= true, dependsOnMethods = {"selectAge"})
+	@Test (priority = 11, enabled= true, dependsOnMethods = {"selectAge"})
 	public void update_button() throws InterruptedException {
 		srchcountry.click_guestupdatebtn();
 		Thread.sleep(2000);
 	}
 
 	
-	@Test (priority = 13, enabled= true, dependsOnMethods = {"selectcountryname"})
+	@Test (priority = 12, enabled= true, dependsOnMethods = {"selectcountryname"})
 	public void clickHotelclass() throws InterruptedException {
 		srchcountry.click_hotelclass();
 		Thread.sleep(2000);
 	}
 	
-	@Test (priority = 14, enabled= true, dependsOnMethods = {"clickHotelclass"})
+	@Test (priority = 13, enabled= true, dependsOnMethods = {"clickHotelclass"})
 	public void printHotelname() {
 		 srchcountry.print_hotelname();
 	}
