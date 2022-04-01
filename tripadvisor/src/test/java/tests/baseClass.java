@@ -19,10 +19,10 @@ public class baseClass {
 		driver.get("https://www.tripadvisor.com/");
 	}
 	
-//	@AfterClass
-//	public void teardown() {
-//		driver.quit();
-//	}
+	@AfterClass
+	public void teardown() {
+		driver.quit();
+	}
 	
 	
 
