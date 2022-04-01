@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-01T11:46:35 BDT" name="Default suite" finished-at="2022-04-01T11:47:19 BDT" duration-ms="43702">
+    <groups>
+    </groups>
+    <test started-at="2022-04-01T11:46:35 BDT" name="Default test" finished-at="2022-04-01T11:47:19 BDT" duration-ms="43702">
+      <class name="tests.SearchHotel">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:46:35 BDT" name="setup" finished-at="2022-04-01T11:46:43 BDT" duration-ms="8415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickonhotel()[pri:1, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:46:43 BDT" name="clickonhotel" finished-at="2022-04-01T11:46:46 BDT" duration-ms="3172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonhotel -->
+        <test-method signature="clickonsearchfield()[pri:2, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:46:47 BDT" name="clickonsearchfield" finished-at="2022-04-01T11:46:47 BDT" depends-on-methods="tests.SearchHotel.clickonhotel" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonsearchfield -->
+        <test-method signature="sendcountryname()[pri:3, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:46:47 BDT" name="sendcountryname" finished-at="2022-04-01T11:46:48 BDT" depends-on-methods="tests.SearchHotel.clickonsearchfield" duration-ms="1244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendcountryname -->
+        <test-method signature="selectcountryname()[pri:4, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:46:48 BDT" name="selectcountryname" finished-at="2022-04-01T11:46:59 BDT" depends-on-methods="tests.SearchHotel.sendcountryname" duration-ms="10250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectcountryname -->
+        <test-method signature="printheading()[pri:5, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:46:59 BDT" name="printheading" finished-at="2022-04-01T11:47:01 BDT" depends-on-methods="tests.SearchHotel.selectcountryname" duration-ms="2157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printheading -->
+        <test-method signature="clickCheckindate()[pri:6, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:47:01 BDT" name="clickCheckindate" finished-at="2022-04-01T11:47:02 BDT" duration-ms="973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckindate -->
+        <test-method signature="clickCheckoutdate()[pri:7, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:47:02 BDT" name="clickCheckoutdate" finished-at="2022-04-01T11:47:04 BDT" depends-on-methods="tests.SearchHotel.clickCheckindate" duration-ms="2479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckoutdate -->
+        <test-method signature="increasechild()[pri:9, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:47:04 BDT" name="increasechild" finished-at="2022-04-01T11:47:07 BDT" depends-on-methods="tests.SearchHotel.clickCheckoutdate" duration-ms="3229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- increasechild -->
+        <test-method signature="clickAgedropdown()[pri:10, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:47:07 BDT" name="clickAgedropdown" finished-at="2022-04-01T11:47:10 BDT" depends-on-methods="tests.SearchHotel.increasechild" duration-ms="2303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAgedropdown -->
+        <test-method signature="selectAge()[pri:11, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:47:10 BDT" name="selectAge" finished-at="2022-04-01T11:47:10 BDT" depends-on-methods="tests.SearchHotel.clickAgedropdown" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAge -->
+        <test-method signature="update_button()[pri:12, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:47:10 BDT" name="update_button" finished-at="2022-04-01T11:47:12 BDT" depends-on-methods="tests.SearchHotel.selectAge" duration-ms="2304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_button -->
+        <test-method signature="clickHotelclass()[pri:13, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:47:12 BDT" name="clickHotelclass" finished-at="2022-04-01T11:47:19 BDT" depends-on-methods="tests.SearchHotel.selectcountryname" duration-ms="6309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickHotelclass -->
+        <test-method signature="printHotelname()[pri:14, instance:tests.SearchHotel@32ee6fee]" started-at="2022-04-01T11:47:19 BDT" name="printHotelname" finished-at="2022-04-01T11:47:19 BDT" depends-on-methods="tests.SearchHotel.clickHotelclass" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printHotelname -->
+      </class> <!-- tests.SearchHotel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
