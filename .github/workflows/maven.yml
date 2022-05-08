@@ -17,7 +17,7 @@ jobs:
       - run: echo "This repo is ${{ github.repository }} .."
       - name: Run a inline script
         run: |
-          ytytuytuy ytyutyutuyt
+          mkdir another_tripadvisor
           ls -l
         shell: bash
       
