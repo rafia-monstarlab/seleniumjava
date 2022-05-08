@@ -25,7 +25,7 @@ jobs:
         shell: bash
       - name: Run Selenium Test
         if: ${{ env.SELENIUM_DRIVER == 'RemoteWebDriver' }}
-        run: echo "Running test in Selenium setup"
+        run: echo "Running test in Selenium grid setup"
       
       
   Build2:
@@ -33,6 +33,19 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      
+      - uses: actions/checkout@v2.4.0
+      - name: Set up openjdk 15.0.6
+        uses: actions/setup-java@v15
+        with:
+          java-version: 15.0.6
+      
+      - name: Install google chrome
+        run: chmod +x InstallChrome.sh
+
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
+      
       - run: echo "This is from second job"
     needs: Build
     if: ${{ always() }}
