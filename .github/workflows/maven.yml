@@ -6,8 +6,6 @@ name: Java CI with Maven
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   
@@ -17,6 +15,9 @@ jobs:
     
     steps:
       - run: echo "This is running inside a ${{ runner.os }} serve in GitHub"
+      - name: checkout source code
+        uses: actions/checkout@v2.4.0
+      - run: echo "This repo is ${{ github.repository }} .."
       
   build:
 
